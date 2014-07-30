@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Newtonsoft.Json;
 
-namespace Punch.Core.Tests
+namespace Punch.Tests
 {
     public class TestViewModel
     {

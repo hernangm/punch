@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Punch.Helpers.Tests
+namespace Punch.Tests
 {
 
     public class ContextViewModel

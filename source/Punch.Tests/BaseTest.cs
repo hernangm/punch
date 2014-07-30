@@ -9,7 +9,7 @@ using Punch.Context;
 using Moq;
 using Punch.Core;
 
-namespace Punch.Base.Tests
+namespace Punch.Tests
 {
     public abstract class BaseTest
     {

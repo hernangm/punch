@@ -1,10 +1,9 @@
-﻿using Punch.Base.Tests;
-using Punch.Bindings;
-using Punch.Core.Tests;
+﻿using Punch.Bindings;
 using HtmlAgilityPack;
 using NUnit.Framework;
+using Punch.Helpers;
 
-namespace Punch.Helpers.Tests
+namespace Punch.Tests
 {
     public class KnockoutHtmlTests : BaseTest
     {

@@ -1,10 +1,8 @@
 ﻿using System.Web;
-using Punch.Base.Tests;
 using Punch.Bindings;
-using Punch.Core.Tests;
 using NUnit.Framework;
 
-namespace Punch.Helpers.Tests
+namespace Punch.Tests
 {
     public class KnockoutBindingTests : BaseTest
     {

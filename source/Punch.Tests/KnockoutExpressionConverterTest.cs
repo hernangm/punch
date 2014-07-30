@@ -2,8 +2,9 @@
 using System.Linq.Expressions;
 using Punch.Contracts;
 using NUnit.Framework;
+using Punch.Core;
 
-namespace Punch.Core.Tests
+namespace Punch.Tests
 {
     public class KnockoutExpressionConverterTest
     {

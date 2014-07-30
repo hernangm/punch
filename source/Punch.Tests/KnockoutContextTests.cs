@@ -1,7 +1,7 @@
-﻿using Punch.Base.Tests;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Punch.Helpers;
 
-namespace Punch.Helpers.Tests
+namespace Punch.Tests
 {
     public class KnockoutContextTests : BaseTest
     {
@@ -10,7 +10,7 @@ namespace Punch.Helpers.Tests
         {
             var context = base.CreateKnockoutContext<ContextViewModel>();
             var child = context.ForEach(m => m.Children);
-            child.Html.SpanFor(m=> m.Name);
+            child.Html.SpanFor(m => m.Name);
             Assert.IsNull(child.Model);
         }
 

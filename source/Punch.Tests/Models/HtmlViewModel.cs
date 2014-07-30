@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace Punch.Helpers.Tests
+namespace Punch.Tests
 {
     class HtmlViewModel
     {
