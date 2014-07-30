@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57ADD3F0-8B64-42FB-BB15-179A5F33F2C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Punch.Bindings</RootNamespace>
+    <AssemblyName>Punch.Bindings</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Appearence\KnockoutAttrBinding.cs" />
+    <Compile Include="Appearence\KnockoutCssBinding.cs" />
+    <Compile Include="Appearence\KnockoutStyleBinding.cs" />
+    <Compile Include="Appearence\KnockoutUniqueNameBinding.cs" />
+    <Compile Include="Appearence\KnockoutVisibleBinding.cs" />
+    <Compile Include="_extensions\Guard.cs" />
+    <Compile Include="_extensions\IStringlyScope.cs" />
+    <Compile Include="_extensions\StringFormatWithExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_extensions\Stringly.cs" />
+    <Compile Include="_extensions\StringlyScopeExtensions.cs" />
+    <Compile Include="_utils\BindingNameResolver.cs" />
+    <Compile Include="ControlFlow\KnockoutForEachBinding.cs" />
+    <Compile Include="ControlFlow\KnockoutIfBinding.cs" />
+    <Compile Include="ControlFlow\KnockoutWithBinding.cs" />
+    <Compile Include="Custom\KnockoutCustomBinding.cs" />
+    <Compile Include="Events\KnockoutClickBinding.cs" />
+    <Compile Include="Events\KnockoutSubmitBinding.cs" />
+    <Compile Include="Events\_KnockoutEventBinding.cs" />
+    <Compile Include="KnockoutBindingCollection.cs" />
+    <Compile Include="KnockoutBindingCollectionOfTModel.cs" />
+    <Compile Include="KnockoutBindingComplexItem.cs" />
+    <Compile Include="KnockoutBindingEnums.cs" />
+    <Compile Include="KnockoutBindingItem.cs" />
+    <Compile Include="KnockoutBindingItemOfTModel.cs" />
+    <Compile Include="KnockoutBindingStringItem.cs" />
+    <Compile Include="Status\KnockoutDisableBinding.cs" />
+    <Compile Include="Status\KnockoutEnableBinding.cs" />
+    <Compile Include="Status\KnockoutHasfocusBinding.cs" />
+    <Compile Include="Text\KnockoutHtmlBinding.cs" />
+    <Compile Include="Text\KnockoutTextBinding.cs" />
+    <Compile Include="Value\KnockoutCheckedBinding.cs" />
+    <Compile Include="Value\KnockoutOptionsBinding.cs" />
+    <Compile Include="Value\KnockoutOptionsCaptionBinding.cs" />
+    <Compile Include="Value\KnockoutOptionsTextBinding.cs" />
+    <Compile Include="Value\KnockoutOptionsValueBinding.cs" />
+    <Compile Include="Value\KnockoutSelectedOptionsBinding.cs" />
+    <Compile Include="Value\KnockoutValueBinding.cs" />
+    <Compile Include="Value\KnockoutValueUpdateBinding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_KnockoutBindingCollectionBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Punch.Contracts\Punch.Contracts.csproj">
+      <Project>{826fcedf-0b69-4f64-b485-414df60342cd}</Project>
+      <Name>Punch.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Punch.Core\Punch.Core.csproj">
+      <Project>{6fb19603-c7dc-4184-b643-541e92ac33bf}</Project>
+      <Name>Punch.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Punch.Bindings.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

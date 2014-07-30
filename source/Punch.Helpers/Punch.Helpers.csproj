@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25C6EE67-C272-4B3C-83BD-CEC6EFAC7AE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Punch.Helpers</RootNamespace>
+    <AssemblyName>Punch.Helpers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Bindings\KnockoutDatePickerBinding.cs" />
+    <Compile Include="Bindings\KnockoutTimePickerBinding.cs" />
+    <Compile Include="Bindings\KnockoutNumericBinding.cs" />
+    <Compile Include="Bindings\KnockoutTooltipBinding.cs" />
+    <Compile Include="Contracts\IField.cs" />
+    <Compile Include="Contracts\IInput.cs" />
+    <Compile Include="Contracts\ITag.cs" />
+    <Compile Include="Enums\FieldType.cs" />
+    <Compile Include="Extensions\KnockoutHtmlHelperExtensions.cs" />
+    <Compile Include="Html\Base\KnockoutTagBase.cs" />
+    <Compile Include="Html\Base\KnockoutTagOfTModel.cs" />
+    <Compile Include="Contracts\ITagProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Html\Input\Extensions\FieldExtensions.cs" />
+    <Compile Include="Html\KnockoutTag.cs" />
+    <Compile Include="Html\Input\Base\KnockoutTextAreaBase.cs" />
+    <Compile Include="Html\Input\Base\KnockoutSelectBase.cs" />
+    <Compile Include="Html\Input\Base\KnockoutTextAreaBaseOfTModel.cs" />
+    <Compile Include="Html\Input\Base\KnockoutCheckedInputBase.cs" />
+    <Compile Include="Html\Input\KnockoutHidden.cs" />
+    <Compile Include="Html\Input\KnockoutDatePicker.cs" />
+    <Compile Include="Html\Input\KnockoutTimePicker.cs" />
+    <Compile Include="Html\Input\KnockoutNumericBox.cs" />
+    <Compile Include="Html\Input\KnockoutDatePickerFor.cs" />
+    <Compile Include="Html\Input\KnockoutRadioButtonFor.cs" />
+    <Compile Include="Html\Input\KnockoutTextAreaFor.cs" />
+    <Compile Include="Html\Input\KnockoutPassword.cs" />
+    <Compile Include="Html\Input\KnockoutTextBoxFor.cs" />
+    <Compile Include="Html\Input\KnockoutCheckBox.cs" />
+    <Compile Include="Html\Input\KnockoutTimePickerFor.cs" />
+    <Compile Include="Html\KnockoutButton.cs" />
+    <Compile Include="Html\Input\Base\KnockoutTextInputBase.cs" />
+    <Compile Include="Html\Input\Base\KnockoutInputBase.cs" />
+    <Compile Include="Html\Input\Base\KnockoutFieldBase.cs" />
+    <Compile Include="Html\Input\Processors\LabelPostProcessor.cs" />
+    <Compile Include="Html\KnockoutButtonFor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Html\KnockoutLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_extensions\IFluentInterface.cs" />
+    <Compile Include="Mvc\KnockoutTagBuilder.cs" />
+    <Compile Include="_extensions\Guard.cs" />
+    <Compile Include="Html\KnockoutTagFor.cs" />
+    <Compile Include="Mvc\KnockoutHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Html\KnockoutAnchor.cs" />
+    <Compile Include="_extensions\StringFormatWithExtensions.cs" />
+    <Compile Include="Extensions\KnockoutContextExtensions.cs" />
+    <Compile Include="Extensions\KnockoutHtmlExtensions.cs" />
+    <Compile Include="Mvc\KnockoutBindingApplier.cs" />
+    <Compile Include="Html\Input\KnockoutNumericBoxFor.cs" />
+    <Compile Include="Html\Input\Base\KnockoutSelectBaseOfTModel.cs" />
+    <Compile Include="Html\Input\Base\KnockoutTextInputBaseOfTModel.cs" />
+    <Compile Include="Html\Input\Base\KnockoutFieldBaseOfTModel.cs" />
+    <Compile Include="Html\Input\Base\KnockoutCheckedInputBaseOfTModel.cs" />
+    <Compile Include="Html\Input\KnockoutDropDownList.cs" />
+    <Compile Include="Html\Input\KnockoutListBox.cs" />
+    <Compile Include="Html\Input\KnockoutRadioButton.cs" />
+    <Compile Include="Html\Input\KnockoutHiddenFor.cs" />
+    <Compile Include="Html\Input\KnockoutCheckBoxFor.cs" />
+    <Compile Include="Html\Input\Base\KnockoutInputBaseOfTModel.cs" />
+    <Compile Include="Html\Input\KnockoutPasswordFor.cs" />
+    <Compile Include="Html\Input\KnockoutTextArea.cs" />
+    <Compile Include="Html\Input\KnockoutTextBox.cs" />
+    <Compile Include="Html\Base\KnockoutTagBaseOfString.cs" />
+    <Compile Include="Html\Extensions\KnockoutTooltip.cs" />
+    <Compile Include="Html\Extensions\KnockoutValidationSummary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Punch.Helpers.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Punch.Bindings\Punch.Bindings.csproj">
+      <Project>{57add3f0-8b64-42fb-bb15-179a5f33f2c1}</Project>
+      <Name>Punch.Bindings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Punch.Context\Punch.Context.csproj">
+      <Project>{c18a786f-1435-45f7-beda-11b960470b33}</Project>
+      <Name>Punch.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Punch.Contracts\Punch.Contracts.csproj">
+      <Project>{826fcedf-0b69-4f64-b485-414df60342cd}</Project>
+      <Name>Punch.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Punch.Core\Punch.Core.csproj">
+      <Project>{6fb19603-c7dc-4184-b643-541e92ac33bf}</Project>
+      <Name>Punch.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\nuget.targets" Condition="Exists('$(SolutionDir)\nuget.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
