@@ -1,5 +1,5 @@
 punch
 =====
 
-[[Home]]
+**[Home] [Home]**
 
