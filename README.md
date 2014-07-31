@@ -1,5 +1,5 @@
 punch
 =====
 
-[[Link Text|What-is-Punch%3F]]
+[[Link Text|What is Punch?]]
 
