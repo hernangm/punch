@@ -2,7 +2,7 @@
 
 It was designed to work within and reinforce the [MVVM pattern](http://en.wikipedia.org/wiki/Model_View_ViewModel). 
 
-Punch was inspired by [Knockout MVC](http://knockoutmvc.com/), but it lost all the server -> client logic conversion. You have to still create your JavaScript viewmodels by hand or by other means. 
+Punch was inspired by [Knockout MVC](http://knockoutmvc.com/), but with none all the server -> client logic conversion. You have to still create your JavaScript viewmodels by hand or by other means. 
 
 ### How do I get it?
 
