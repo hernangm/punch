@@ -2,4 +2,4 @@ punch
 =====
 
 
-[a relative link](wiki/What-is-Punch%3F)
+[a relative link](What-is-Punch%3F)
