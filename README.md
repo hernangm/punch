@@ -1,5 +1,5 @@
 punch
 =====
 
-[pepe|What is Punch]
+[What is Punch](What is Punch)
 
