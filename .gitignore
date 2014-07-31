@@ -1,5 +1,3 @@
-
-
 [Dd]ebug/
 [Rr]elease/
 [Oo]bj
@@ -21,7 +19,8 @@ Desktop.ini
 
 
 packages/
-*.nuspec
 *_debug.ps1
 *_key.ps1
+*.gpState 
 Service References/
+.nuget/

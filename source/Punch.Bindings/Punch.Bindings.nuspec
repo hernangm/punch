@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>$title$</title>
+        <description>$description$</description>
+        <authors>$author$</authors>
+        <copyright>© 2014 Hernan Marano</copyright>
+        <projectUrl>http://hernangm.github.io/punch</projectUrl>
+        <iconUrl>http://hernangm.github.io/punch/images/nuget.png</iconUrl>
+        <licenseUrl>https://raw.githubusercontent.com/hernangm/punch/master/LICENSE.txt</licenseUrl>
+        <tags>Knockout, ASP MVC, MVC, MVVM</tags>
+    </metadata>
+</package>
