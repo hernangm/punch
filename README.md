@@ -1,5 +1,6 @@
 punch
 =====
 
-**[Home] [Home]**
+**[Wiki] [Wiki]**
 
+[Wiki]: https://github.com/hernangm/punch/wiki
