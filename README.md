@@ -10,7 +10,27 @@ You can easily install it directly from NuGet:
 
 `PM> Install-Package Punch.Helpers`
 
+### What kind of magic Punch does?
+
+Punch allows you to turn this
+
+```csharp
+@model Punch.SampleMvcWebsite.Models.SignUpViewModel
+
+<label for="LastName">Last Name</label>
+<input id="LastName" type="text" data-bind="value:LastName"/>
+```
+
+into this
+
 ### Can I extend it?
+```csharp
+@model Punch.SampleMvcWebsite.Models.SignUpViewModel
+
+<label for="LastName">Last Name</label>
+<input id="LastName" type="text" data-bind="value:LastName"/>
+```
+
 
 It can be easily extended to 
 
