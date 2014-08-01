@@ -23,13 +23,13 @@ Punch allows you to turn this
 
 into this
 
-### Can I extend it?
 ```csharp
 @model Punch.SampleMvcWebsite.Models.SignUpViewModel
 
 @Html.Knockout().Html.TextBoxFor(m => m.LastName)
 ```
 
+### Can I extend it?
 
 It can be easily extended to 
 
