@@ -27,8 +27,7 @@ into this
 ```csharp
 @model Punch.SampleMvcWebsite.Models.SignUpViewModel
 
-<label for="LastName">Last Name</label>
-<input id="LastName" type="text" data-bind="value:LastName"/>
+@Html.Knockout().Html.TextBoxFor(m => m.LastName)
 ```
 
 
