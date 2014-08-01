@@ -14,7 +14,7 @@ You can easily install it directly from NuGet:
 
 Punch allows you to turn this
 
-```csharp
+```cshtml
 @model Punch.SampleMvcWebsite.Models.SignUpViewModel
 
 <label for="LastName">Last Name</label>
